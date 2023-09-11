@@ -1,6 +1,9 @@
 body {
     padding: 0;
     margin: 0;
+    background-image: url(assets/bgHome.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -21,14 +24,42 @@ a {
     padding: 10px;
 }
 
-section {
+nav {
     display: flex;
+    width: 100%;
+}
+
+section {
+    display: inline-block;
+    flex: 1;
     flex-direction: row;
     width: 100%;
     margin-left: 56px;
 }
 
+
+.optionsRight {
+    width: 40%;
+    text-align: right;
+    float: right;
+}
+
 .headerDetail {
     height: 5px;
     width: 100%;
+}
+
+.profileIcon {
+    height: 50px;
+    margin-top: 5px;
+}
+
+.cadastro, .login {
+    position: relative;
+    top:-15px;
+}
+
+.home, .forum, .game {
+    position: relative;
+    top: 10px;
 }
