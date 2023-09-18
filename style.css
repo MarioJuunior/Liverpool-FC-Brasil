@@ -3,7 +3,8 @@ body {
     margin: 0;
     background-image: url(assets/bgHome.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 1366px;
+    height: 2000px;
 }
 
 header {
@@ -50,8 +51,8 @@ section {
 }
 
 .profileIcon {
-    height: 50px;
-    margin-top: 5px;
+    height: 45px;
+    margin-top: 10px;
 }
 
 .cadastro, .login {
@@ -62,4 +63,32 @@ section {
 .home, .forum, .game {
     position: relative;
     top: 10px;
+}
+
+span {
+    color: white;
+    font-size: 32px;
+    position: relative;
+    top: 11px;
+}
+
+.spanRight {
+    position: relative;
+    top: -12px;
+
+}
+
+.bg1Home {
+    height: 565px;
+    position: absolute;
+    bottom: -1px;
+    left: 800px;
+    z-index: -2;
+}
+
+.bg2Home {
+    position: absolute;
+    width: 100%;
+    bottom: -400px;
+    z-index: -1;
 }
