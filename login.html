@@ -11,27 +11,31 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="script_login.js"></script>
 </head>
 <body>
+
+    <div class="loading-screen">
+        <div class="loading-icon"></div>
+      </div>
+
     <main>
         <section>
-            <h1 style="display: flex; justify-content: center;">Entrar</h1><br>
+            <h1 style="display: flex; justify-content: center;">Entrar</h1>
 
             <div class="input_container">
                 <input type="text" placeholder="Insira seu nome"><br><br>
-                <input type="text" placeholder="Insira seu email"><br><br>
-                <input type="text" placeholder="Insira sua senha"><br><br>
+                <input type="email" placeholder="Insira seu email"><br><br>
+                <input type="password" placeholder="Insira sua senha"><br><br>
             </div>
 
-            <button style="display: flex; margin: auto;">Bem vindo de volta!</button>
+            <button id="btn_login" style="display: flex; margin: auto; display: none;">Bem vindo de volta!</button>
 
-            <a href="index.html">⬅️ Voltar ao início</a><br><br><br><br>
+            <a id="cadastro_login" class="cadastro_login" href="cadastro.html" style="display: none;">Ainda não tem uma conta? Clique aqui</a>
+            <a id="home_login" href="index.html" style="display: none;">⬅️ Voltar ao início</a><br>
         </section>
 
     </main>
 
-    <aside>
-
-    </aside>
 </body>
 </html>

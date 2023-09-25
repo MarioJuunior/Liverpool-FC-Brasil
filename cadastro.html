@@ -11,28 +11,32 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="script_cadastro.js"></script>
 </head>
 <body>
+    <div class="loading-screen">
+        <div class="loading-icon"></div>
+      </div>
+    
     <main>
         <section>
             <h1 style="display: flex; justify-content: center;">Cadastro</h1><br>
 
             <div class="input_container">
                 <input type="text" placeholder="Insira seu nome"><br><br>
-                <input type="text" placeholder="Insira seu email"><br><br>
-                <input type="text" placeholder="Crie uma senha"><br><br>
-                <input type="text" placeholder="Repita sua nova senha"><br><br>
+                <input type="email" placeholder="Insira seu email"><br><br>
+                <input type="password" placeholder="Crie uma senha"><br><br>
+                <input type="password" placeholder="Repita sua nova senha"><br><br>
             </div>
 
-            <button style="display: flex; margin: auto;">Finalizar cadastro</button>
+            <button id="btn_cadastro" style="display: flex; margin: auto; display: none;">Finalizar cadastro</button>
 
-            <a href="index.html">⬅️ Voltar ao início</a><br>
+            <a id="login_cadastro" class="login_cadastro" href="login.html" style="display: none;">Já é cadastrado? Clique aqui</a>
+            <a id="home_cadastro" href="index.html" style="display: none;">⬅️ Voltar ao início</a><br>
+
         </section>
 
     </main>
 
-    <aside>
-
-    </aside>
 </body>
 </html>
